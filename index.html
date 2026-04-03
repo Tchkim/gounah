@@ -495,25 +495,24 @@
         const PricingPage = () => {
     // 💡 이 부분의 금액만 수정하시면 됩니다!
     const pricingData = [
-        { category: "진찰료", item: "초진 진찰료", minPrice: "10,000", maxPrice: "10,000", note: "기초 신체검사 포함" },
+        { category: "진찰료", item: "초진 진찰료", minPrice: "10,000", maxPrice: "10,000", note: "" },
         { category: "진찰료", item: "재진 진찰료", minPrice: "7,000", maxPrice: "7,000", note: "동일 질병 재내원 시" },
-        { category: "진찰료", item: "진찰 상담료", minPrice: "7,000", maxPrice: "7,000", note: "10분당 상담 기준" },
+        { category: "진찰료", item: "진찰 상담료", minPrice: "7,000", maxPrice: "7,000", note: "진찰에 대한 상담료" },
         { category: "입원료", item: "입원비 (당일 기준)", minPrice: "40,000", maxPrice: "90,000", note: "*치료/처치비용 별도" },
-        { category: "검사료", item: "피부 초진 기초 검사", minPrice: "40,000", maxPrice: "40,000", note: "육안 테이핑 trichogram 우드램프 검사" },
-        { category: "검사료", item: "귀 초진 기초 검사", minPrice: "30,000", maxPrice: "30,000", note: "검이경검사 도말검사" },
-        { category: "검사료", item: "마취하 구강 검사 (초진)", minPrice: "80,000", maxPrice: "80,000", note: "육안, 프로빙, 치과방사선(전체) *마취전 검사, 마취 비용 별도" },
-        { category: "검사료", item: "치과 CT", minPrice: "80,000", maxPrice: "120,000", note: "체중에 따라 상이" },
-        { category: "검사료", item: "전혈구 검사", minPrice: "39,000", maxPrice: "39,000", note: "빈혈 혈소판 백혈구 관련 혈액검사" },
-        { category: "검사료", item: "혈청화학 검사", minPrice: "79,000", maxPrice: "139,000", note: "간 신장 단백질 수치에 대한 혈액검사" },
+    
+        
+        { category: "검사료", item: "전혈구 검사", minPrice: "35,000", maxPrice: "35,000", note: "빈혈 혈소판 백혈구 관련 혈액검사" },
+        { category: "검사료", item: "혈청화학 검사", minPrice: "75,000", maxPrice: "75,000", note: "간 신장 단백질 수치에 대한 혈액검사" },
         { category: "검사료", item: "전해질 검사", minPrice: "35,000", maxPrice: "35,000", note: "나트륨 칼륨 염소 수치 검사" },
-        { category: "검사료", item: "엑스선 촬영(부위당)", minPrice: "30,000", maxPrice: "80,000", note: "흉부/복부 각 2장 기준, 체중에 따라 상이" },
+        { category: "검사료", item: "엑스선 촬영(1장당)", minPrice: "20,000", maxPrice: "80,000", note: "흉부/복부 각 2장 기준, 체중에 따라 상이" },
         { category: "검사료", item: "복부 초음파 검사", minPrice: "30,000", maxPrice: "120,000", note: "부분/전체/체중에 따라 상이" },
-        { category: "검사료", item: "심장 초음파 검사 (초진)", minPrice: "119,000", maxPrice: "199,000", note: "체중에 따라 상이" },
-        { category: "검사료", item: "심장 초음파 검사 (재진)", minPrice: "79,000", maxPrice: "129,000", note: "체중에 따라 상이" },
+        { category: "검사료", item: "심장 초음파 검사 (초진)", minPrice: "12,0000", maxPrice: "180,000", note: "체중에 따라 상이" },
+        { category: "검사료", item: "심장 초음파 검사 (재진)", minPrice: "8,0000", maxPrice: "120,000", note: "체중에 따라 상이" },
         { category: "백신접종", item: "개 종합백신(DHPPL)", minPrice: "25,000", maxPrice: "25,000", note: "" },
         { category: "백신접종", item: "고양이 종합백신", minPrice: "35,000", maxPrice: "35,000", note: "" },
         { category: "백신접종", item: "광견병 백신", minPrice: "20,000", maxPrice: "20,000", note: "" },
         { category: "백신접종", item: "켄넬코프 백신", minPrice: "20,000", maxPrice: "20,000", note: "" },
+        { category: "백신접종", item: "인플루엔자 백신", minPrice: "35,000", maxPrice: "35,000", note: "" },
     ];
 
     React.useEffect(() => {
@@ -525,10 +524,10 @@
         <div className="pt-32 pb-24 bg-neutralBg min-h-screen">
             <div className="container mx-auto px-6 max-w-4xl">
                 <div>
-                    준비중입니다
+                    
                     </div>
                 
-                {/* 
+                
                 
                 <div className="bg-white p-8 rounded-3xl shadow-sm mb-8 text-center">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">동물진료업의 행위에 대한 진료비용</h2>
@@ -601,7 +600,7 @@
                         <li>• 검사 및 처치비용은 체중에 따라 상이할 수 있습니다. 자세한 비용은 상담 후 안내해 드립니다. </li>
                     </ul>
                 </div>
-                */}
+                
             </div>
         </div>
     );
